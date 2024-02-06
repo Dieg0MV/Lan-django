@@ -12,7 +12,3 @@ def hello(request):
         'items':items
     })
 
-'''#datos mostrados en formato json
-def products(request):
-    products = list(Product.objects.values())
-   ''' 
