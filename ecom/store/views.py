@@ -2,9 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import *
 # Create your views here.
-def hello(request):
-    return HttpResponse('Hello world')
+def Home(request):
+     return render(request, 'Home.html')
 
-def products(request):
-    products = list(Product.objects.values())
-    return JsonResponse(products, safe=False)
+def items(request):
+     return render(request, 'index.html')
